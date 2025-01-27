@@ -257,13 +257,13 @@ h1 {
 
 #cardB {
     transform: rotate(0deg);
-    margin-left: -40px; 
+    margin-left: -60px; 
     z-index: 2; 
 }
 
 #cardC {
     transform: rotate(10deg);
-    margin-left: -40px; 
+    margin-left: -60px; 
     z-index: 3;
 }
 
