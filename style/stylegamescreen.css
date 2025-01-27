@@ -118,35 +118,35 @@ h1 {
 
 
 .card#card1 {
-    background-image: url('/Files/assassino.png');
+    background-image: url('/Files/Cartas/assassino.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card2 {
-    background-image: url('/Files/capitao.jpg');
+    background-image: url('/Files/Cartas/capitao.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card3 {
-    background-image: url('/Files/duque.jpg');
+    background-image: url('/Files/Cartas/duque.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card4 {
-    background-image: url('/Files/embaixador.jpg');
+    background-image: url('/Files/Cartas/embaixador.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card5 {
-    background-image: url('/Files/condessa.jpg');
+    background-image: url('/Files/Cartas/condessa.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
