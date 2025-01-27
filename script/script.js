@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
             closeActionPopup();
         }
     });
+
+    // Adicione evento de clique para elevar as cartas
+    const smallCards = document.querySelectorAll('.small-card');
+    smallCards.forEach(card => {
+        card.addEventListener('click', function () {
+            smallCards.forEach(c => c.classList.remove('clicked')); // Remove a classe 'clicked' de todas as cartas
+            card.classList.add('clicked'); // Adiciona a classe 'clicked' na carta clicada
+        });
+    });
 });
 
 function openCardPopup() {
@@ -73,3 +82,4 @@ function useAction() {
     alert('Ação Usada!');
     closeActionPopup();
 }
+

@@ -8,13 +8,18 @@
 </head>
 <body class="body">
     <button class="round-button" id="openButton" onclick="openCardPopup()">Faça sua jogada!</button>
+    <div class="card-hand" id="cardHand">
+        <div class="card small-card" id="cardA">Carta A</div>
+        <div class="card small-card" id="cardB">Carta B</div>
+        <div class="card small-card" id="cardC">Carta C</div>
+    </div>
     <div class="popup" id="cardPopup">
         <div class="container">
-            <div class="card" id="card1" onclick="openActionPopup('Use 3 moedas da sua pilha e assassine um personagem de outro jogador.', 'card1')">ASSASSINO</div>
-            <div class="card" id="card2" onclick="openActionPopup('Roube 2 moedas da pilha de outro jogador.', 'card2')">CAPITAO</div>
-            <div class="card" id="card3" onclick="openActionPopup('Pegue 3 moedas da pilha central.', 'card3')">DUQUE</div>
-            <div class="card" id="card4" onclick="openActionPopup('Troque 2 de suas cartas com 2 cartas da pilha central.', 'card4')">EMBAIXADOR</div>
-            <div class="card" id="card5" onclick="openActionPopup('Proteja-se de uma tentativa de assassinato.', 'card5')">CONDESSA</div>
+            <div class="card" id="card1" onclick="openActionPopup('Ação 1: Use 3 moedas de sua pilha para assassinar um personagem de outro jogador.', 'card1')">Ação 1</div>
+            <div class="card" id="card2" onclick="openActionPopup('Ação 2: roube 2 moedas de outro jogador.', 'card2')">Ação 2</div>
+            <div class="card" id="card3" onclick="openActionPopup('Ação 3: Pegue 3 moedas da pilha central.', 'card3')">Ação 3</div>
+            <div class="card" id="card4" onclick="openActionPopup('Ação 4: Troque 2 de suas cartas com 2 cartas aleatórias da pilha.', 'card4')">Ação 4</div>
+            <div class="card" id="card5" onclick="openActionPopup('Ação 5: Se proteja de uma tentativa de assassinato.', 'card5')">Ação 5</div>
         </div>
         <button class="close-popup" onclick="closeCardPopup()">Fechar</button>
     </div>
@@ -25,4 +30,5 @@
     <script src="/script/script.js"></script>
 </body>
 </html>
+
 
