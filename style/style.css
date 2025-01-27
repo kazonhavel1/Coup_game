@@ -1,8 +1,135 @@
-.body{
-    background-image: url(/Files/madeira.jpg);
+.body {
+    background-image: url('/Files/madeira.jpg'); /* Certifique-se de que a imagem está no caminho correto */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+h1 {
+    font-size: 5em; /* Aumenta o tamanho da fonte do texto */
+    margin: 70px 0 20px 0; /* Adiciona margem superior para descer o texto */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px; /* Adiciona margem superior para espaçar o container */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Ajuste a opacidade aqui */
+    padding: 50px; /* Aumenta o padding para expandir o card */
+    width: 20%;  /* Define uma largura maior para o card */
+    height: 50%; /* Define uma altura maior para o card */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="number"] {
+    margin: 10px 0;
+    padding: 10px; /* Aumenta o padding para inputs maiores */
+    width: 70%; /* Aumenta a largura dos inputs */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte dos inputs */
+}
+
+button {
+    margin: 50px 0 0 0;
+    padding: 15px 30px; /* Aumenta o padding do botão */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do botão */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .card {
+        width: 30%;
+        height: 40%;
+    }
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 40%;
+        height: 40%;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 50%;
+        height: 50%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 70%;
+        height: 50%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+        height: auto; /* Ajusta a altura automaticamente para caber no conteúdo */
+        padding: 30px; /* Reduz o padding para telas menores */
+    }
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        padding: 10px 20px; /* Ajusta o padding do botão para telas menores */
+        font-size: 1em;
+    }
+    input[type="number"] {
+        width: 90%; /* Ajusta a largura dos inputs para telas menores */
+    }
+}
