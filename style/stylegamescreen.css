@@ -1,0 +1,275 @@
+.body {
+    background-image: url('/Files/madeira.jpg'); /* Certifique-se de que a imagem está no caminho correto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 5em; /* Aumenta o tamanho da fonte do texto */
+    margin: 70px 0 20px 0; /* Adiciona margem superior para descer o texto */
+    text-align: center;
+}
+
+.round-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed; /* Posiciona o botão de forma fixa */
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 50px; /* Ajusta a distância do lado esquerdo */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.action-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Alinha os itens em uma linha */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre os cards */
+    background: none; /* Remove o fundo da div container */
+    margin-top: -350px; /* Ajuste essa margem para subir os cards */
+}
+
+.card-hand {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 150px; /* Ajusta a distância do lado esquerdo para posicionar ao lado do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre as cartas */
+}
+
+.card-hand {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 50%; /* Centraliza a mão de cartas horizontalmente */
+    transform: translateX(-50%); /* Garante que a centralização esteja correta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -30px; /* Reduz o espaço entre as cartas para criar a sobreposição */
+}
+
+.card-hand {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 50%; /* Centraliza a mão de cartas horizontalmente */
+    transform: translateX(-50%); /* Garante que a centralização esteja correta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -40px; /* Sobreposição das cartas */
+}
+
+.card-hand {
+    position: fixed;
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    left: 50%; /* Centraliza a mão de cartas horizontalmente */
+    transform: translateX(-50%); /* Garante que a centralização esteja correta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -40px; /* Reduz o espaço entre as cartas para criar a sobreposição */
+}
+
+
+
+
+.card#card1 {
+    background-image: url('/Files/assassino.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card2 {
+    background-image: url('/Files/capitao.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card3 {
+    background-image: url('/Files/duque.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card4 {
+    background-image: url('/Files/embaixador.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card5 {
+    background-image: url('/Files/condessa.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Ajuste a opacidade aqui */
+    padding: 10px;
+    width: 200px; /* Maior largura */
+    height: 300px; /* Maior altura */
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em; /* Tamanho da fonte */
+    position: relative; /* Necessário para o popup filho */
+}
+
+.card:hover {
+    background-color: rgba(0, 217, 255, 0.8); /* Altera a cor ao passar o mouse */
+}
+
+.card.transparent {
+    opacity: 0.5;
+}
+
+.popup-button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-button.button-Usar {
+    background-color: #008CBA;
+    color: white;
+}
+
+.popup-button.button-Usar:hover {
+    background-color: #007bb5;
+}
+
+.close-popup {
+    margin: 20px auto 0; /* Centraliza o botão */
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Garante que o botão seja tratado como um bloco para centralizar */
+}
+
+.close-popup:hover {
+    background-color: #d32f2f;
+}
+
+.action-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Define a largura do pop-up */
+    max-width: 220px; /* Largura máxima do pop-up */
+    max-height: 150px; /* Altura máxima do pop-up */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1; /* Garantir que o pop-up esteja acima de outros elementos */
+    overflow: auto; /* Adicionar barra de rolagem, se necessário */
+}
+
+.card-hand {
+    position: fixed;
+    bottom: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -40px; 
+}
+
+.small-card {
+    width: 150px;
+    height: 220px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, z-index 0s; 
+    position: relative; 
+}
+
+#cardA {
+    transform: rotate(-10deg);
+    z-index: 1; 
+}
+
+#cardB {
+    transform: rotate(0deg);
+    margin-left: -60px; 
+    z-index: 2; 
+}
+
+#cardC {
+    transform: rotate(10deg);
+    margin-left: -60px; 
+    z-index: 3;
+}
+
+.small-card:hover {
+    transform: translateY(-20px) scale(1.2); 
+    z-index: 4; 
+}
+
+
