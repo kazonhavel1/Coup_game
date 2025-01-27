@@ -1,4 +1,8 @@
 .body{
-    background-image: url("/Files/download.jpg");
-    background-size: contain;
+    background-image: url(/Files/madeira.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
