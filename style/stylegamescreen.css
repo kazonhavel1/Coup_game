@@ -65,11 +65,47 @@ h1 {
     background: none; /* Remove o fundo da div container */
 }
 
+.card#card1 {
+    background-image: url('/Files/assassino.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card2 {
+    background-image: url('/Files/capitao.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card3 {
+    background-image: url('/Files/duque.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card4 {
+    background-image: url('/Files/embaixador.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card#card5 {
+    background-image: url('/Files/condessa.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .card {
     background-color: rgba(255, 255, 255, 0.8); /* Ajuste a opacidade aqui */
-    padding: 10px; /* Menor padding */
-    width: 100px; /* Menor largura */
-    height: 100px; /* Menor altura */
+    padding: 10px;
+    width: 200px; /* Maior largura */
+    height: 300px; /* Maior altura */
+    margin-left: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -77,12 +113,12 @@ h1 {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    font-size: 1em; /* Menor fonte */
+    font-size: 1em; /* Tamanho da fonte */
     position: relative; /* Necessário para o popup filho */
 }
 
 .card:hover {
-    background-color: rgba(255, 165, 0, 0.8); /* Altera a cor ao passar o mouse */
+    background-color: rgba(0, 217, 255, 0.8); /* Altera a cor ao passar o mouse */
 }
 
 .card.transparent {

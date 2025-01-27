@@ -41,7 +41,7 @@ function openActionPopup(action, cardId) {
         }
     });
 
-    document.getElementById('actionText').innerText = action;
+    document.getElementById('actionText').innerText = "use 3 moedas para assassinar um personagem de outro jogador";
 }
 
 function closeAllPopups() {
