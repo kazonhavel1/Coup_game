@@ -108,6 +108,11 @@ h1 {
     gap: -30px; /* Reduz o espaço entre as cartas para criar a sobreposição */
 }
 
+.card-hand img{
+    max-width: 90%;
+    min-width: 90%;
+}
+
 
 .card#card1 {
     background-image: url('/Files/Cartas/assassino.jpg');
