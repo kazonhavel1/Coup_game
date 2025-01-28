@@ -268,8 +268,8 @@ h1 {
 }
 
 .small-card:hover {
-    transform: translateY(-20px) scale(1.2); 
-    z-index: 4; 
+    transform: translateY(-40px) scale(1.2)!important; 
+    z-index: 4!important;
 }
 
 
