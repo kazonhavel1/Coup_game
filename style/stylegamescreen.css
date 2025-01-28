@@ -108,64 +108,37 @@ h1 {
     gap: -30px; /* Reduz o espaço entre as cartas para criar a sobreposição */
 }
 
-.card-hand {
-    position: fixed;
-    bottom: 20px; /* Ajusta a distância da parte inferior */
-    left: 50%; /* Centraliza a mão de cartas horizontalmente */
-    transform: translateX(-50%); /* Garante que a centralização esteja correta */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: -40px; /* Sobreposição das cartas */
-}
-
-.card-hand {
-    position: fixed;
-    bottom: 20px; /* Ajusta a distância da parte inferior */
-    left: 50%; /* Centraliza a mão de cartas horizontalmente */
-    transform: translateX(-50%); /* Garante que a centralização esteja correta */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: -40px; /* Reduz o espaço entre as cartas para criar a sobreposição */
-}
-
-.card-hand img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 
 .card#card1 {
-    background-image: url('/Files/assassino.png');
+    background-image: url('/Files/Cartas/assassino.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card2 {
-    background-image: url('/Files/capitao.jpg');
+    background-image: url('/Files/Cartas/capitao.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card3 {
-    background-image: url('/Files/duque.jpg');
+    background-image: url('/Files/Cartas/duque.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card4 {
-    background-image: url('/Files/embaixador.jpg');
+    background-image: url('/Files/Cartas/embaixador.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card#card5 {
-    background-image: url('/Files/condessa.jpg');
+    background-image: url('/Files/Cartas/condessa.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,10 +160,10 @@ h1 {
     font-size: 1em; /* Tamanho da fonte */
     position: relative; /* Necessário para o popup filho */
 }
-
+/* Efeito horrendo de deixar azul e transparente
 .card:hover {
-    background-color: rgba(0, 217, 255, 0.8); /* Altera a cor ao passar o mouse */
-}
+    background-color: rgba(0, 217, 255, 0.8); /* Altera a cor ao passar o mouse 
+}*/
 
 .card.transparent {
     opacity: 0.5;
@@ -264,6 +237,7 @@ h1 {
 }
 
 .small-card {
+    
     width: 150px;
     height: 220px;
     background-color: #fff;
@@ -292,8 +266,8 @@ h1 {
 }
 
 .small-card:hover {
-    transform: translateY(-20px) scale(1.2); 
-    z-index: 4; 
+    transform: translateY(-40px) scale(1.2)!important; 
+    z-index: 4!important;
 }
 
 
