@@ -6,13 +6,14 @@
     <title>Bem vindo ao Coup</title>
     <link rel="stylesheet" href="/style/stylegamescreen.css">
 </head>
-<body class="body">
+<body class="body" id="body">
     <button class="round-button" id="openButton" onclick="openCardPopup()">Faça sua jogada!</button>
     <div class="card-hand" id="cardHand">
-        <div class="card small-card" id="cardA">Carta A</div>
-        <div class="card small-card" id="cardB">Carta B</div>
-        <div class="card small-card" id="cardC">Carta C</div>
+        <div class="card small-card" id="cardA" onclick="openActionPopupImg('','body')">Carta A </div>
+        <div class="card small-card" id="cardB" onclick="openActionPopupImg('','body')">Carta B</div>
+        <div class="card small-card" id="cardC" onclick="openActionPopupImg('','body')">Carta C</div>
     </div>
+    <button class="round-button1" id="cardButton" onclick="atribuiCartas()">Obtenha as cartas</button>
     <div class="popup" id="cardPopup">
         <div class="container">
             <div class="card" id="card1" onclick="openActionPopup('Ação: Use 3 moedas de sua pilha para assassinar um personagem de outro jogador.', 'card1')"></div>
