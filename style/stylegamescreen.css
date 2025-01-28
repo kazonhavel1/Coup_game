@@ -35,6 +35,22 @@ h1 {
     z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
 }
 
+.round-button1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: fixed; /* Posiciona o botão de forma fixa */
+    bottom: 20px; /* Ajusta a distância da parte inferior */
+    right: 50px; /* Ajusta a distância do lado esquerdo */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+
 
 .popup {
     display: none;
@@ -114,7 +130,10 @@ h1 {
     gap: -40px; /* Reduz o espaço entre as cartas para criar a sobreposição */
 }
 
-
+.card-hand img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 .card#card1 {
@@ -217,8 +236,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Define a largura do pop-up */
-    max-width: 220px; /* Largura máxima do pop-up */
-    max-height: 150px; /* Altura máxima do pop-up */
+    max-width: 300px; /* Largura máxima do pop-up */
+    max-height: 520px; /* Altura máxima do pop-up */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
     padding: 20px;
     border-radius: 10px;
@@ -226,6 +245,11 @@ h1 {
     text-align: center;
     z-index: 1; /* Garantir que o pop-up esteja acima de outros elementos */
     overflow: auto; /* Adicionar barra de rolagem, se necessário */
+}
+
+.action-popup img{
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .card-hand {
