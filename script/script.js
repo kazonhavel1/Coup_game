@@ -5,22 +5,20 @@ const cartas = ["/Files/Cartas/assassino.jpg","/Files/Cartas/capitao2.jpg","/Fil
 let quantidade_jogadores = document.getElementById("numero");
 
 function obterCarta(){
+
     return cartas[Math.floor(Math.random() * cartas.length)];
 }
 
 function atribuiCartas(){
     event.preventDefault();
     const card1 = document.getElementById("cardA"); // randomiza a primera carta
-    card1.innerHTML = `<img src="${obterCarta()}" alt="Imagem" class="carta1" id="carta1"">`;
+    card1.innerHTML = `<img src="${obterCarta()}" onclick="openActionPopupImg('','body')" alt="Imagem" class="carta1" id="carta1"">`;
     
     const card2 = document.getElementById("cardB"); // randomiza a segunda carta
-    card2.innerHTML = `<img src="${obterCarta()}" alt="Imagem" class="carta2" id="carta2">`;
+    card2.innerHTML = `<img src="${obterCarta()}" onclick="openActionPopupImg('','body')" alt="Imagem" class="carta2" id="carta2">`;
     
     const card3 = document.getElementById("cardC"); // randomiza a terceira carta
-    card3.innerHTML = `<img src="${obterCarta()}" alt="Imagem" class="carta2" id="carta3">`;
-
-    
-    
+    card3.innerHTML = `<img src="${obterCarta()}" onclick="openActionPopupImg('','body')" alt="Imagem" class="carta2" id="carta3">`;
    
 }
 document.addEventListener('DOMContentLoaded', function () {
@@ -101,6 +99,10 @@ function closeAllPopups() {
     allPopups.forEach(popup => {
         if (popup.id !== 'cardPopup') {
             popup.style.display = 'none';
+            img = document.getElementById("turnos");
+            if (img != null) {
+                img.innerHTML = ''
+            }
         }
     });
     const cards = document.querySelectorAll('.card');
